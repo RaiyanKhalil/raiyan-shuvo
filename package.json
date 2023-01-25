@@ -2,7 +2,7 @@
   "name": "raiyan-shuvo",
   "version": "0.1.0",
   "private": false,
-  "homepage":"https://raiyan-shuvo.github.io",
+  "homepage":"https://raiyanshuvo.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
