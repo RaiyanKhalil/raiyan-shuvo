@@ -1,5 +1,5 @@
 import * as React from "react";
-import React, { useState, useEffect } from 'react';
+import useEffect from 'react';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import ReactGA from 'react-ga';
 import Home from "./pages/home";
