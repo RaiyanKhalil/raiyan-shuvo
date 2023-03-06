@@ -1,27 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
-
-
-
 
 const Home = () => {
     
+    const location = useLocation();
     useEffect(() => {
+        // console.log("fire")
         ReactGA.initialize('G-BT7QS340V0');
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
+        ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
 
-    function handleButtonClick() {
-        ReactGA.event({
-          category: 'Button',
-          action: 'Click',
-          label: 'Homepage'
-        });
-      }
-    
 
-    //   G-BT7QS340V0
     return (
         <div className='hero-center'>
             <div className="scale-in-center">
@@ -30,7 +22,7 @@ const Home = () => {
                     <p>Software Engineer</p>
                     <div className='holder-class'>
                         <div className='shake-horizontal'>
-                            <Link to='/contact' className='contact-btn' onClick={handleButtonClick}>CONTACT ME</Link>
+                            <Link to='/contact' className='contact-btn'>CONTACT ME</Link>
                             {/* <Link className="na v-basic nav-home" to="/">Home</Link> */}
                         </div>
                     </div>

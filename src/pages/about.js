@@ -1,7 +1,19 @@
 import React from 'react';
 // import hero from '../images/hero-two.jpg';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga';
+
 const About = () => {
+    
+    const location = useLocation();
+    useEffect(() => {
+        console.log("fire")
+        ReactGA.initialize('G-BT7QS340V0');
+        ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+
     return (
         <div className='hero-about-center slide-in-bck-center'>
             <div className="about-main">
