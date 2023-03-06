@@ -1,5 +1,5 @@
 import * as React from "react";
-import useEffect from 'react';
+// import useEffect from 'react';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import ReactGA from 'react-ga';
 import Home from "./pages/home";
@@ -9,15 +9,15 @@ import Portfolio from "./pages/portfolio";
 import Resume from "./pages/resume";
 import './App.css';
 
-ReactGA.initialize('G-BT7QS340V0');
+// ReactGA.initialize('G-BT7QS340V0');
 
 
 export default function App() {
 
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
 
 
   return (
