@@ -9,7 +9,7 @@ import Portfolio from "./pages/portfolio";
 import Resume from "./pages/resume";
 import './App.css';
 
-// ReactGA.initialize('G-BT7QS340V0');
+ReactGA.initialize('G-BT7QS340V0');
 
 
 export default function App() {
