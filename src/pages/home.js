@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
                     <p>Software Engineer</p>
                     <div className='holder-class'>
                         <div className='shake-horizontal'>
-                            <a href='/contact' className='contact-btn'>CONTACT ME</a>
+                            <Link to='/contact' className='contact-btn'>CONTACT ME</Link>
+                            {/* <Link className="na v-basic nav-home" to="/">Home</Link> */}
                         </div>
                     </div>
                 </div>
