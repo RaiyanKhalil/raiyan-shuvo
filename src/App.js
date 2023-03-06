@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React from 'react';
+// import ReactGA from 'react-ga';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
@@ -11,14 +11,6 @@ import './App.css';
 
 
 export default function App() {
-
-
-      
-  useEffect(() => {
-    ReactGA.initialize('G-BT7QS340V0');
-    ReactGA.pageview(window.location.pathname + window.location.search);  
-
-  }, []);
 
   return (
     <div>
@@ -37,6 +29,13 @@ export default function App() {
 }
 
 function Layout() {
+
+  // useEffect(() => {
+  //   ReactGA.initialize('G-BT7QS340V0');
+  //   ReactGA.pageview(window.location.pathname + window.location.search);  
+
+  // }, []);
+
   return (
     <div>
       <div className="nav-main">

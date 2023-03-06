@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga';
+// import { useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
+// import ReactGA from 'react-ga';
 
 const Home = () => {
     
-    const location = useLocation();
-    useEffect(() => {
-        // console.log("fire")
-        ReactGA.initialize('G-BT7QS340V0');
-        ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
+    // const location = useLocation();
+    // useEffect(() => {
+    //     // console.log("fire")
+    //     // ReactGA.initialize('G-BT7QS340V0');
+    //     ReactGA.pageview(location.pathname + location.search);
+    // }, [location]);
 
 
     return (
